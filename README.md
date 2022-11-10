@@ -2,18 +2,18 @@
 - All endpoints were implemented
 - added folder structure (controller, services, routes)
 - Using transactions, and most of the methods from sequelize
-- Using raw query for handling complex query and enhance the performance instead of using includes/In in the sequalize. Taking into account when using Replacements strategy its safe (no SQL injections risk)
+- Using raw query for handling complex query and enhancing the performance instead of using includes/In in the sequelize. Taking into account when using the Replacements strategy it's safe (no SQL injections risk)
 - Using code structure
 - setup of swagger.io
 
-Due to limit of time
-- swaggerio up and running into: http://localhost:3001/api-docs/
+Due to the limit of time
+- swaggerio up and running into http://localhost:3001/api-docs/
 - I did the basic setup for jest 
-- for concurrency handle, in the middleware for profile instead of quering agains the DB we can add cache strategy by using redis, or memory data. also its a good
-- its pending compress the code in order to reduce the size of bundle for deployment process
-- its pending adding some imput validations like start and end data in the query parameters
-# DEEL BACKEND TASK
+- for concurrency handle, in the middleware for profile instead of querying against the DB we can add a cache strategy by using Redis, or memory data.
+- it's pending compressing the code in order to reduce the size of the bundle for the deployment process
+- it's pending adding some input validations like start and end date in the query parameters
 
+# DEEL BACKEND TASK
   
 
 💫 Welcome! 🎉
