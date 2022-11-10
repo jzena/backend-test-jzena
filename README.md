@@ -6,7 +6,7 @@
 - Using code structure
 - setup of swagger.io
 
-Due to the limit of time
+Due to the limit of time some funcy stuff
 - swaggerio up and running into http://localhost:3001/api-docs/
 - I did the basic setup for jest 
 - for concurrency handle, in the middleware for profile instead of querying against the DB we can add a cache strategy by using Redis, or memory data.
