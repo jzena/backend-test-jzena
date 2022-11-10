@@ -18,7 +18,7 @@ const postBalanceDepositByClientId = async (req, res) => {
     console.log(error);
     res
       .status(httpStatus.INTERNAL_SERVER_ERROR)
-      .json({ message: 'Error occurred while deposit for a user', error });
+      .json({ message: 'Error occurred while deposit for a user. Please contac the service administrator', error });
   }
 };
 

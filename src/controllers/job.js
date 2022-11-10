@@ -35,7 +35,7 @@ const postPayByJobId = async (req, res) => {
   } catch (error) {
     res
       .status(httpStatus.INTERNAL_SERVER_ERROR)
-      .json({ message: 'Error occurred while paying for a job', error });
+      .json({ message: 'Error occurred while paying for a job. Please contac the service administrator', error });
   }
 };
 

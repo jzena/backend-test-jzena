@@ -15,7 +15,7 @@ const getBestProfession = async (req, res) => {
     console.log(error);
     res
       .status(httpStatus.INTERNAL_SERVER_ERROR)
-      .json({ message: 'Error occurred while finding best profession', error });
+      .json({ message: 'Error occurred when getting best profession. Please contac the service administrator', error });
   }
 };
 
@@ -31,7 +31,7 @@ const getBestClients = async (req, res) => {
   } catch (error) {
     res
       .status(httpStatus.INTERNAL_SERVER_ERROR)
-      .json({ message: 'Error occurred while finding best profession', error });
+      .json({ message: 'Error occurred when getting best profession. Please contac the service administrator', error });
   }
 }
 

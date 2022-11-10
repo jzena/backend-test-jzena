@@ -57,6 +57,9 @@ const postPayByJobId = async (req) => {
     if (balance >= amountToPay) {
       const paymentTransaction = await sequelize.transaction();
       try {
+        //1. Update balance from Client
+        //2. Update balance from contractor
+        //3. Update Job paymentDate
         await Promise.all([
           Profile.update(
             { balance: sequelize.literal(`balance - ${ amountToPay }`) },
